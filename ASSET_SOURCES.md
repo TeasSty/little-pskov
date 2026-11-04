@@ -7,20 +7,20 @@
 | Файл | Роль на сайте | Источник |
 |------|---------------|----------|
 | `images/logo.jpg` | Логотип / favicon | Аватар сообщества |
-| `images/gallery-07.jpg` | Hero collage — крупный кадр | Стена / атмосферная зимняя зона |
-| `images/hero.jpg` | Hero collage — именинный акцент | Стена сообщества |
-| `images/gallery-04.jpg` | Hero collage — цветовой акцент (красный фон) | Стена сообщества |
-| `images/gallery-05.jpg` | Hero collage — циклорама / свет | Стена сообщества |
-| `images/gallery-03.jpg` | Блок «Студия» — основной кадр | Стена сообщества (циклорама) |
-| `images/gallery-02.jpg` | Блок «Студия» — inset-реквизит | Стена сообщества |
-| `images/zone-01.jpg` | Мозаика зон | Альбом стены |
-| `images/gallery-08.jpg` | Мозаика зон | Альбом стены |
-| `images/gallery-06.jpg` | Мозаика зон (широкий) | Альбом стены |
-| `images/zone-02.jpg` | Мозаика зон | Альбом стены |
-| `images/gallery-09.jpg` | Мозаика зон | Альбом стены |
-| `images/gallery-01.jpg` | Мозаика зон | Альбом стены |
-| `images/gallery-10.jpg` | Блок «Визит» | Альбом стены |
-| `images/zone-03.jpg` | Блок «Запись» | Альбом стены |
+| `images/gallery-07.jpg` | Hero collage + filmstrip | Стена / атмосферная зимняя зона |
+| `images/hero.jpg` | Hero collage + filmstrip | Стена сообщества |
+| `images/gallery-04.jpg` | Hero collage + packages rail | Стена сообщества |
+| `images/gallery-05.jpg` | Hero collage + filmstrip | Стена сообщества |
+| `images/gallery-08.jpg` | Hero collage + зоны + contact inset | Альбом стены |
+| `images/gallery-06.jpg` | Strip flank + мозаика зон | Альбом стены |
+| `images/gallery-09.jpg` | Strip flank + мозаика зон | Альбом стены |
+| `images/gallery-03.jpg` | Блок «Студия» + filmstrip | Стена сообщества (циклорама) |
+| `images/gallery-02.jpg` | Студия inset + filmstrip | Стена сообщества |
+| `images/zone-02.jpg` | Студия detail + мозаика зон | Альбом стены |
+| `images/zone-01.jpg` | Мозаика зон + packages rail | Альбом стены |
+| `images/gallery-01.jpg` | Мозаика зон + visit inset | Альбом стены |
+| `images/gallery-10.jpg` | Мозаика зон + блок «Визит» | Альбом стены |
+| `images/zone-03.jpg` | Мозаика зон + блок «Запись» | Альбом стены |
 
 Прайс пакетов: альбом [Пакеты услуг](https://vk.ru/album-211703413_313591910).  
 Локации и аренда: статья [Локации](https://vk.ru/@little_pskov-lokacii).

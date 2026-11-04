@@ -28,7 +28,7 @@
   }
 
   const targets = document.querySelectorAll(
-    ".strip, .studio__media, .studio__copy, .zones__head, .zones__item, .packages__intro, .menu__row, .visit__copy, .visit__photo, .contact__panel, .contact__photo"
+    ".strip, .studio__media, .studio__copy, .zones__head, .zones__item, .packages__intro, .menu__row, .packages__rail, .filmstrip__head, .filmstrip__track figure, .visit__copy, .visit__media, .contact__panel, .contact__media"
   );
   targets.forEach((el) => el.classList.add("reveal"));
 

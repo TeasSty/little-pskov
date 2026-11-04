@@ -2,10 +2,11 @@
   const header = document.querySelector("[data-header]");
   const toggle = document.querySelector("[data-nav-toggle]");
   const mobileNav = document.querySelector("[data-mobile-nav]");
-  const hero = document.querySelector(".hero");
+  const hero = document.querySelector("[data-hero]");
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   const onScroll = () => {
-    header?.classList.toggle("is-scrolled", window.scrollY > 10);
+    header?.classList.toggle("is-scrolled", window.scrollY > 8);
   };
   onScroll();
   window.addEventListener("scroll", onScroll, { passive: true });
@@ -27,7 +28,7 @@
   }
 
   const targets = document.querySelectorAll(
-    ".statement, .atelier__intro, .atelier__photo, .atelier__aside, .lookbook__head, .lookbook__rail figure, .services__head, .price-row, .faq__layout > *, .contact__copy, .contact__photo"
+    ".strip, .studio__media, .studio__copy, .zones__head, .zones__item, .packages__intro, .menu__row, .visit__copy, .visit__photo, .contact__panel, .contact__photo"
   );
   targets.forEach((el) => el.classList.add("reveal"));
 
@@ -40,10 +41,36 @@
           io.unobserve(entry.target);
         });
       },
-      { threshold: 0.12, rootMargin: "0px 0px -5% 0px" }
+      { threshold: 0.12, rootMargin: "0px 0px -6% 0px" }
     );
     targets.forEach((el) => io.observe(el));
   } else {
     targets.forEach((el) => el.classList.add("is-visible"));
+  }
+
+  if (!reduceMotion && hero) {
+    const layers = hero.querySelectorAll("[data-parallax]");
+    let ticking = false;
+
+    const updateParallax = () => {
+      const rect = hero.getBoundingClientRect();
+      const progress = Math.min(1, Math.max(0, -rect.top / Math.max(rect.height, 1)));
+      layers.forEach((layer) => {
+        const amount = Number(layer.getAttribute("data-parallax") || 0);
+        layer.style.translate = `0 ${progress * amount * -120}px`;
+      });
+      ticking = false;
+    };
+
+    window.addEventListener(
+      "scroll",
+      () => {
+        if (ticking) return;
+        ticking = true;
+        requestAnimationFrame(updateParallax);
+      },
+      { passive: true }
+    );
+    updateParallax();
   }
 })();
